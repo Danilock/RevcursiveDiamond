@@ -12,20 +12,28 @@ void drawDiamond(int n, int space) {
     }
     
     for (int i = 0; i < space; i++)
+    {
         std::cout << " ";
+    }
 
     for (int i = 0; i < 2 * n - 1; i++)
+    {
         std::cout << "*";
+    }
 
     std::cout << std::endl;
 
     drawDiamond(n - 1, space + 1);
 
     for (int i = 0; i < space; i++)
+    {
         std::cout << " ";
+    }
 
     for (int i = 0; i < 2 * n - 1; i++)
+    {
         std::cout << "*";
+    }
 
     std::cout << std::endl;
 }
